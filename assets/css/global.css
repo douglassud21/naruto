@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Vidaloka", serif; 
+}
+
+:root {
+    --kakashi-color: #8B0000;  /* Kakashi Hatake */
+    --naruto-color: #FFA500;   /* Naruto Uzumaki */
+    --sasuke-color: #6A0DAD;   /* Sasuke Uchiha */
+    --sakura-color: #FF69B4;   /* Sakura Haruno */
+}

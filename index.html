@@ -6,66 +6,140 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--Links CSS-->
-    <link rel="stylesheet" href="global.css" />
-    <link rel="stylesheet" href="header.css" />
-    <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="aside.css" />
-    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <link rel="stylesheet" href="assets/css/team7/team7_header.css" />
+    <link rel="stylesheet" href="assets/css/team7/team7_main.css" />
 
     <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Smooch&family=Vidaloka&display=swap" rel="stylesheet"/>
 
     <!--Favicon-->
 
     <!--Titulo-->
     <title>Naruto</title>
+
   </head>
   <body>
 
     <audio id="music" autoplay loop>
-        <source src="" type="audio/mpeg"/>
-        Seu navegador não suporta a reprodução de áudio.
+      <source src="" type="audio/mpeg" />
+      Seu navegador não suporta a reprodução de áudio.
     </audio>
 
     <header>
       <nav aria-label="Menu Principal">
         <ul>
-          <li><a href="#Team7">Time 7</a></li>
-          <li><a href="#Kakashi">Kakashi</a></li>
-          <li><a href="#Naruto">Naruto</a></li>
-          <li><a href="#Sasuke">Sasuke</a></li>
-          <li><a href="#Sakura">Sakura</a></li>
+          <li><a href="#Team7" class="team7 list">Time 7</a></li>
+          <li><a href="#Kakashi" class="kakashi list">Kakashi</a></li>
+          <li><a href="#Naruto" class="naruto list">Naruto</a></li>
+          <li><a href="#Sasuke" class="sasuke list">Sasuke</a></li>
+          <li><a href="#Sakura" class="sakura list">Sakura</a></li>
         </ul>
       </nav>
     </header>
 
-    <main>
-      <section class="sec_main">
+    <div class="sec_video">
+        <video class="background-video" autoplay muted loop playsinline>
+            <source src="videos/naruto video.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos.
+        </video>
+        <div class="overlay"></div> <!-- Adiciona a camada de escurecimento -->
+        <div class="content">
+            
 
-        <h1>Time <span>7</span></h1>
 
-        <div id="personagens_img">
-          <div class="box">
-            <img src="img/kakashi-removebg-preview.png" alt="Kakashi Hatake" />
-            <a href=""><h2>Kakashi Hatake</h2></a>
-          </div>
 
-          <div class="box">
-            <img src="img/naruto-removebg-preview.png" alt="Naruto Uzumaki" />
-            <a href=""><h2>Naruto Uzumaki</h2></a>
-          </div>
 
-          <div class="box">
-            <img src="img/sasuke-removebg-preview.png" alt="Sasuke Uchiha" />
-            <a href=""><h2>Sasuke Uchiha</h2></a>
-          </div>
 
-          <div class="box">
-            <img src="img/sakura-removebg-preview.png" alt="Sakura Haruno" />
-            <a href=""><h2>Sakura Haruno</h2></a>
-          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <main>
+                <section class="sec_main">
+                  <h1>Time <span>7</span></h1>
+          
+                  <div id="personagens_img">
+                    <div class="box">
+                      <a href="">
+                        <img
+                          src="img/kakashi-removebg-preview.png" alt="Kakashi Hatake"/>
+                        <h2 class="kakashi_name">Kakashi Hatake</h2>
+                      </a>
+                    </div>
+          
+                    <div class="box">
+                      <a href="">
+                        <img src="img/naruto-removebg-preview.png" alt="Naruto Uzumaki" />
+                        <h2 class="naruto_name">Naruto Uzumaki</h2>
+                      </a>
+                    </div>
+          
+                    <div class="box">
+                      <a href="">
+                        <img src="img/sasuke-removebg-preview.png" alt="Sasuke Uchiha" />
+                        <h2 class="sasuke_name">Sasuke Uchiha</h2>
+                      </a>
+                    </div>
+          
+                    <div class="box">
+                      <a href="">
+                        <img src="img/sakura-removebg-preview.png" alt="Sakura Haruno" />
+                        <h2 class="sakura_name">Sakura Haruno</h2>
+                      </a>
+                    </div>
+                  </div>
+                </section>
+              </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </div>
-      </section>
-    </main>
+    </div>
 
   </body>
 </html>

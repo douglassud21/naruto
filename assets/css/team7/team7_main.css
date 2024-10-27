@@ -1,0 +1,128 @@
+
+:root {
+    --kakashi-color: #8B0000;  /* Kakashi Hatake */
+    --naruto-color: #FFA500;   /* Naruto Uzumaki */
+    --sasuke-color: #6A0DAD;   /* Sasuke Uchiha */
+    --sakura-color: #FF69B4;   /* Sakura Haruno */
+}
+
+body, html {
+    margin: 0; /* Remove margens padrão do body e html */
+    height: 100%; /* Garante que o body ocupe toda a altura da tela */
+}
+
+.sec_main {
+    text-align: center;
+}
+
+h1 {
+    font-size: 5rem;
+    margin-top: 5rem;
+}
+
+h1 span {
+    font-size: 4rem;
+    margin-left: -15px;
+    color: red;
+}
+
+#personagens_img {
+    display: flex; /* Utiliza o Flexbox para layout em linha */
+    justify-content: space-around; /* Espaçamento entre os itens */
+    flex-wrap: nowrap; /* Permite que os itens se movam para a próxima linha, se necessário */
+    margin: 20px; /* Adiciona margem ao redor do contêiner */
+}
+
+.box {
+    text-align: center; /* Centraliza o texto dentro de cada box */
+    margin: 10px; /* Margem entre os boxes */
+}
+
+.box h2 {
+    font-size: 2rem;
+}
+
+.kakashi_name {
+    color: var(--kakashi-color);
+}
+
+.kakashi_name:hover {
+    color: #cc0202;
+}
+
+.naruto_name {
+    color: var(--naruto-color);
+}
+
+.naruto_name:hover {
+    color: #fad325;
+}
+
+.sasuke_name {
+    color: var(--sasuke-color);
+}
+
+.sasuke_name:hover {
+    color: #8a1bda;
+}
+
+.sakura_name {
+    color: var(--sakura-color);
+}
+
+.sakura_name:hover {
+    color: #f71f8b;
+}
+
+.box a {
+    text-decoration: none;
+}
+
+.box img {
+    width: 450px; /* Define uma largura fixa para as imagens (ajuste conforme necessário) */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-top: 5rem;
+    border-radius: 10px; /* Arredonda as bordas da imagem */
+
+    transition: scale 0.5s ease, color 0.5s ease;
+}
+
+.box img:hover {
+    scale: 1.2;
+}
+
+.sec_video {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    height: 94vh;
+}
+
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+/* Adiciona uma camada de escurecimento */
+.sec_video .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.959); /* Cor preta com 50% de opacidade */
+    z-index: 0;
+}
+
+.sec_video .content {
+    position: relative;
+    z-index: 1; /* Garante que o conteúdo fique acima do vídeo e da camada de escurecimento */
+    color: #fff; /* Cor do texto para destacar sobre o vídeo */
+}

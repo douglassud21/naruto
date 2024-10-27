@@ -1,0 +1,62 @@
+
+:root {
+    --kakashi-color: #8B0000;  /* Kakashi Hatake */
+    --naruto-color: #FFA500;   /* Naruto Uzumaki */
+    --sasuke-color: #6A0DAD;   /* Sasuke Uchiha */
+    --sakura-color: #FF69B4;   /* Sakura Haruno */
+}
+
+header {
+    background-color: #000000;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+}
+
+.list {
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #fff;
+
+    padding: 0.5rem 1rem;
+    border: 2px solid #FFFFFF;
+
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.team7:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.kakashi:hover {
+    background-color: var(--kakashi-color);
+    color: #FFFFFF;
+}
+
+.naruto:hover {
+    background-color: var(--naruto-color);
+    color: #FFFFFF;
+}
+
+.sasuke:hover {
+    background-color: var(--sasuke-color);
+    color: #FFFFFF;
+}
+
+.sakura:hover {
+    background-color: var(--sakura-color);
+    color: #FFFFFF;
+}
