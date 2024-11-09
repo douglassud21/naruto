@@ -90,39 +90,3 @@ h1 span {
 .box img:hover {
     scale: 1.2;
 }
-
-.sec_video {
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-    width: 100%;
-    height: 94vh;
-}
-
-.background-video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-}
-
-/* Adiciona uma camada de escurecimento */
-.sec_video .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.959); /* Cor preta com 50% de opacidade */
-    z-index: 0;
-}
-
-.sec_video .content {
-    position: relative;
-    z-index: 1; /* Garante que o conteúdo fique acima do vídeo e da camada de escurecimento */
-    color: #fff; /* Cor do texto para destacar sobre o vídeo */
-}
